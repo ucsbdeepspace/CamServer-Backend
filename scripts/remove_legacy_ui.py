@@ -6,6 +6,7 @@ builds should use `mvn clean package`; the legacy controller/resources are remov
 from source as well. The original JAR is never modified.
 """
 import argparse
+import copy
 import hashlib
 from pathlib import Path
 import zipfile
@@ -32,7 +33,9 @@ def main():
             dst.comment = src.comment
             for item in src.infolist():
                 if not legacy(item.filename):
-                    dst.writestr(item, src.read(item.filename))
+                    # ZipFile.writestr mutates header offsets on its ZipInfo input.
+                    # Keep source metadata intact for subsequent byte verification.
+                    dst.writestr(copy.copy(item), src.read(item.filename))
         with zipfile.ZipFile(args.output) as result:
             expected = {n for n in src.namelist() if not legacy(n)}
             if set(result.namelist()) != expected:
