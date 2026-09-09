@@ -1,0 +1,28 @@
+server:
+  port: 443
+  ssl:
+    enabled: false
+    key-store: classpath:keystore.p12
+    key-store-password: server@2025
+    key-store-type: PKCS12
+    key-alias: tomcat
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  datasource:   # Configuration for SQL Server
+    url: jdbc:sqlserver://localhost:1433;databaseName=CamServer;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: Server@2025
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: validate       # or validate/none/create-drop
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServerDialect
+app:
+  images:
+    base-dir: /Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/data/images

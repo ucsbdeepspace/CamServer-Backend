@@ -1,13 +1,26 @@
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/service/StreamService.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/controller/MonitorController.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/controller/PageController.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/repository/UserRepository.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/controller/UploadController.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/model/Settings.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/service/DatabaseService.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/controller/QueryController.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/controller/UserController.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/Application.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/service/UserService.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/model/User.java
-/home/ricky/CamServer-springboot/backend/src/main/java/edu/camserver/app/model/Camera.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/model/FrameMeta.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/ImageService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/StreamService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/model/User.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/model/Image.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/DatabaseService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/UserService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/StreamController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/QueryController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/PageController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/model/Settings.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/model/Camera.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/CameraService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/repository/ImageRepository.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/Application.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/UserController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/config/ImagePaths.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/SettingsController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/StatsController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/repository/CameraRepository.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/UploadController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/FrameService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/MonitorController.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/repository/UserRepository.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/service/SettingsService.java
+/Users/mizukiqaq/Documents/Workspace/All Sky Cam/CamServer-Backend/src/main/java/edu/camserver/app/controller/LiveStreamController.java

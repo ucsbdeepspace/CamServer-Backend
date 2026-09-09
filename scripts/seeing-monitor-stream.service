@@ -1,0 +1,24 @@
+# Seeing-monitor live video producer (camera host side).
+#
+# Install: sudo cp seeing-monitor-stream.service /etc/systemd/system/ && sudo systemctl daemon-reload
+#          sudo systemctl enable --now seeing-monitor-stream.service
+# Adjust the paths, backend URL and token below first. The camera driver needs USB access, hence root.
+[Unit]
+Description=Seeing monitor live video producer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/seeing-monitor
+Environment=PYTHONUNBUFFERED=1
+Environment=CAMSERVER_BACKEND=https://armageddon.deepspace.ucsb.edu
+Environment=CAMSERVER_TLS_INSECURE=1
+Environment=CAMSERVER_LIVE_INGEST_TOKEN=replace-with-the-token-from-the-server-unit
+ExecStart=/usr/bin/python3 /home/pi/seeing-monitor/live_stream_producer.py --camera --camera-path /home/pi/allSkyCamera/camera --fps 5 --max-width 1920
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

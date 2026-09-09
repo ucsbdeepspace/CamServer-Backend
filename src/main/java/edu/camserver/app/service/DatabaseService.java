@@ -63,7 +63,7 @@ public class DatabaseService {
             params.add(lastUID);
         }
 
-        sql += "ORDER BY Images.Timestamp " + order +
+        sql += " ORDER BY Images.Timestamp " + order +
                 " OFFSET 0 ROWS FETCH NEXT " + pagesize + " ROWS ONLY";
 
         List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql, params.toArray());

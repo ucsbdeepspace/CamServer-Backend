@@ -18,7 +18,11 @@ spring:
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       ddl-auto: update       # or validate/none/create-drop
     show-sql: true
     database-platform: org.hibernate.dialect.SQLServerDialect
-
+app:
+  images:
+    base-dir: /mnt/CamData/images
